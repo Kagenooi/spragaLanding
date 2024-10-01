@@ -1,0 +1,302 @@
+.svgs_wrapper {
+    position: relative;
+}
+
+.svg_positions {
+    position: absolute;
+    z-index: 2;
+}
+
+.cross_1_svg {
+    top: -193px;
+    right: 10%;
+}
+
+.cross_2_svg {
+    top: 140px;
+    left: -120%;
+    @media (max-width: 1440px) {
+        left: -90%;
+    }
+}
+
+.cross_3_svg {
+    top: 190px;
+    left: -105%;
+    @media (max-width: 1440px) {
+        left: -70%;
+    }
+}
+
+.cross_4_svg {
+    bottom: -200px;
+    left: -105%;
+}
+
+.cap_svg {
+    left: -50%;
+    rotate: -30deg;
+    top: -10px;
+    @media (max-width: 1440px) {
+        left: -30%;
+    }
+}
+
+.cap_svg_2 {
+    rotate: 20deg;
+    bottom: -45px;
+    right: -6.2%;
+    @media (max-width: 1440px) {
+        right: 10.2%;
+    }
+}
+
+.round_1_svg {
+    width: 12px;
+    height: 12px;
+    bottom: -27px;
+    right: -20%;
+    @media (max-width: 1440px) {
+        right: 0;
+    }
+}
+
+.round_2_svg {
+    width: 16px;
+    height: 16px;
+    bottom: 30px;
+    right: -25%;
+    @media (max-width: 1440px) {
+        right: -5%;
+    }
+}
+
+.cloud_1 {
+    width: 88px;
+    height: 55px;
+    bottom: -120px;
+    right: 5%;
+}
+
+.cross_5_svg {
+    left: -34%;
+    bottom: 40px;
+}
+
+.cap_3_svg {
+    left: -25%;
+    bottom: -30px;
+    rotate: -16deg;
+}
+
+.cap_4_svg {
+    right: -42%;
+    rotate: 20deg;
+    top: -150px;
+    @media (max-width: 1440px) {
+        right: 0;
+        top: -190px;
+    }
+}
+
+.cap_5_svg {
+    right: -30%;
+    rotate: -20deg;
+    top: -100px;
+    @media (max-width: 1440px) {
+        right: 8%;
+        top: -150px;
+    }
+}
+
+.cross_6_svg {
+    right: -41%;
+    top: 0;
+    @media (max-width: 1440px) {
+        right: 0;
+        top: -70px;
+    }
+}
+
+.round_3_svg {
+    width: 12px;
+    height: 12px;
+    right: -49%;
+    top: -80px;
+    @media (max-width: 1440px) {
+        right: -3%;
+        top: -120px;
+    }
+}
+
+.round_4_svg {
+    width: 16px;
+    height: 16px;
+    right: -58%;
+    top: -40px;
+    @media (max-width: 1440px) {
+        right: -7%;
+        top: -80px;
+    }
+}
+
+.trees_1_svg {
+    left: -32%;
+    top: 50px;
+    @media (max-width: 1440px) {
+        left: -22%;
+    }
+}
+
+.cloud_2_svg {
+    bottom: -24px;
+    right: -72%;
+    @media (max-width: 1440px) {
+        right: -58%;
+    }
+}
+
+.cloud_3_svg {
+    bottom: -280px;
+    left: -23%;
+    @media (max-width: 1440px) {
+        left: -13%;
+    }
+}
+
+.birds_1_svg {
+    top: 0;
+    right: 4%;
+}
+
+.cross_7_svg {
+    top: -55px;
+    left: -26%;
+}
+
+.cross_8_svg {
+    top: -100px;
+    left: -12%;
+}
+
+.round_5_svg {
+    width: 16px;
+    height: 16px;
+    top: -145px;
+    right: 26%;
+}
+
+.round_6_svg {
+    width: 17px;
+    height: 17px;
+    top: -110px;
+    right: 14%;
+}
+
+.round_7_svg {
+    width: 23px;
+    height: 23px;
+    top: -90px;
+    right: 23%;
+}
+
+.cloud_4_svg {
+    top: 0;
+    right: -43%;
+}
+
+.tree_alone_1_svg {
+    top: -175px;
+    right: -22%;
+    @media (max-width: 1024px) {
+        top: -98px;
+
+    }
+    @media (max-width: 768px) {
+        top: -115px;
+        right: -43%;
+    }
+}
+
+.star_1_svg {
+    top: -260px;
+    right: -51%;
+}
+
+.birds_2_svg {
+    bottom: -75px;
+    left: -28%;
+}
+
+.cloud_5_svg {
+    bottom: -75px;
+    right: -21%;
+}
+
+.trees_2_svg {
+    top: -340px;
+    right: 26%;
+}
+
+.star_2_svg {
+    top: -390px;
+    right: -4%;
+}
+
+.shop_1_svg {
+    top: -330px;
+    right: -23%;
+}
+
+.cross_9_svg {
+    top: -193px;
+    right: 12%;
+}
+
+.cross_10_svg {
+    top: -150px;
+    right: 17.5%;
+}
+
+.cloud_6_svg {
+    top: -130px;
+    left: -32%;
+    @media (max-width: 1440px) {
+        left: -12%;
+    }
+}
+
+.half_moon_1_svg {
+    top: -200px;
+    left: -40%;
+}
+
+.half_moon_star_1_svg {
+    width: 150px;
+    height: 150px;
+    top: -225px;
+    left: -38%;
+}
+
+.cloud_7_svg {
+    bottom: -120px;
+    right: 4%;
+    @media (max-width: 1440px) {
+        right: 17%;
+    }
+}
+
+
+.parallax-svg {
+    position: absolute;
+    transition: 500ms;
+    will-change: transform;
+}
+
+#car {
+    position: absolute;
+    display: none;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /*transform: rotateX(180deg);*/
+}

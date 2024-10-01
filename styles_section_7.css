@@ -1,0 +1,156 @@
+.footer {
+    width: 100%;
+    padding: 80px 60px;
+    background: rgba(8, 8, 7, 1);
+    @media (max-width: 1024px) {
+        padding: 60px 40px;
+    }
+}
+
+.footer_container {
+    width: min(1920px, 100%);
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.footer_top_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+    @media (max-width: 640px) {
+        row-gap: 32px;
+
+    }
+}
+
+.footer_top_left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    flex: 1;
+}
+
+.footer_top_right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 48px;
+
+    width: 545px;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        width: 100%;
+        gap: 32px;
+    }
+    @media (max-width: 640px) {
+        row-gap: 48px;
+    }
+}
+
+.soc_icons_wrapper {
+    height: 56px;
+    display: flex;
+    column-gap: 14px;
+}
+
+.footer_top_right_company_name_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 213px;
+}
+
+.input_wrapper {
+    display: flex;
+    gap: 2px;
+    height: 42px;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    padding: 0 8px 0 8px;
+    border: none;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input_button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background: rgba(51, 51, 51, 1);
+    border-radius: 4px;
+
+}
+
+.footer_top_right_newsletter_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 284px;
+
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+.footer_bottom_block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 640px) {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 16px;
+    }
+}
+
+.footer_bottom_block_item {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.footer_bottom_block_item_item {
+    @media (max-width: 640px) {
+        flex-direction: column;
+        row-gap: 16px;
+
+    }
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #3D3D3D;
+}
+
+.point {
+    width: 6px;
+    height: 6px;
+    background: #BDBDBD;
+    border-radius: 50%;
+}
+
+
+

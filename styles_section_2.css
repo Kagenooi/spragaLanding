@@ -1,0 +1,222 @@
+.section_2 {
+    margin-top: 100px;
+    position: relative;
+
+}
+
+.union_ltd_block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 96px;
+    @media (max-width: 640px) {
+        row-gap: 60px;
+    }
+}
+
+.union_ltd_top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: min(698px, 100%);
+    margin-inline: auto;
+    @media (max-width: 640px) {
+        row-gap: 32px;
+    }
+}
+
+.union_ltd_title_wrapper {
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+
+    @media (max-width: 640px) {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.union_ltd_bottom {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    height: 564px;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        height: auto;
+
+        & > div {
+            height: 564px;
+            flex: initial;
+        }
+    }
+}
+
+.union_ltd_bottom_left {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+.union_ltd_content {
+    height: 100%;
+    width: 100%;
+}
+
+
+.union_ltd_bottom_right {
+    position: relative;
+    background: #F4F4F4;
+    flex: 1;
+    border-radius: 16px;
+    @media (max-width: 640px) {
+        height: auto !important;
+    }
+
+    & > div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        padding-inline: 64px;
+        height: 100%;
+        z-index: 1;
+
+        @media (max-width: 640px) {
+            padding: 32px 24px;
+        }
+    }
+}
+
+.union_ltd_bright_round_svg {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    @media (max-width: 1024px) {
+        width: 50%;
+
+    }
+    @media (max-width: 768px) {
+        width: 70%;
+
+    }
+    @media (max-width: 640px) {
+        width: 40%;
+
+    }
+    @media (max-width: 360px) {
+        width: 70%;
+
+    }
+}
+
+.curve_line_wrapper {
+    position: relative;
+    width: 100%;
+}
+
+
+.union_ltd_text_wrapper p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-size: 24px;
+    line-height: 34px;
+    color: #080807;
+    font-weight: 400;
+}
+
+@media (max-width: 640px) {
+    .union_ltd_text_wrapper p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.union_ltd_text_wrapper b {
+    font-weight: 700;
+    /*color: red;*/
+}
+
+
+.curve_absolute {
+    height: 2970px;
+    width: 1210px;
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    @media (max-width: 1440px) {
+        left: 43%;
+    }
+    @media (max-width: 1024px) {
+        left: 50%;
+        height: 3240px;
+    }
+    @media (max-width: 640px) {
+        height: 3660px;
+    }
+}
+
+.curve_line {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.curve_line_xl {
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.curve_line_md {
+    @media (min-width: 1025px) {
+        display: none;
+    }
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+
+.curve_line_sm {
+    @media (min-width: 769px) {
+        display: none;
+    }
+    @media (max-width: 640px) {
+        display: none;
+    }
+}
+
+.curve_line_xs {
+    @media (min-width: 641px) {
+        display: none;
+    }
+}
+
+.video_wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.video_play_button {
+    cursor: pointer;
+    border-radius: 50%;
+    filter: drop-shadow(0px 8.66667px 8.66667px rgba(0, 0, 0, 0.05)) drop-shadow(0px 17.3333px 17.3333px rgba(0, 0, 0, 0.05)) drop-shadow(0px 34.6667px 34.6667px rgba(0, 0, 0, 0.05)) drop-shadow(0px 69.3333px 69.3333px rgba(0, 0, 0, 0.05)) drop-shadow(0px 138.667px 138.667px rgba(0, 0, 0, 0.05));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 4;
+}
+
