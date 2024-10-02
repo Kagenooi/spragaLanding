@@ -60,7 +60,7 @@ const handleScroll = () => {
         const maxScale = 2; // Maximum size
         const minScale = .8; // Minimum size
 
-        const maxLeft = 20; // Maximum left translation
+        const maxLeft = 50; // Maximum left translation
         const minLeft = 0; // Minimum left translation
 
         // Use Math.sin to create a smooth oscillation based on scroll
