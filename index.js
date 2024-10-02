@@ -57,8 +57,8 @@ const handleScroll = () => {
     parallaxSVGs.forEach((svg, index) => {
         // Oscillating scale factor using sine wave
         const scaleFactor = 0.005; // Adjust for sensitivity
-        const maxScale = 1; // Maximum size
-        const minScale = 0.8; // Minimum size
+        const maxScale = 2; // Maximum size
+        const minScale = .8; // Minimum size
 
         const maxLeft = 20; // Maximum left translation
         const minLeft = 0; // Minimum left translation
