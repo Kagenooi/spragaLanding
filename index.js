@@ -109,7 +109,7 @@ const autoScroll = () => {
     // Update the car's position and rotation
     // car.style.transform = `translate(${point.x + 190}px, ${point.y - 50}px) rotate(${angle}deg) `;
 
-    car.style.transform = `translate(${point.x + 190}px, ${point.y - 50}px) rotateY(${angle}deg) `;
+    car.style.transform = `translate(${point.x}px, ${point.y}px) rotateY(${angle}deg) `;
 
 };
 
