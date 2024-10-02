@@ -301,7 +301,7 @@
     width: 100%;
 
     @media (max-width: 640px) {
-        margin-inline: -8px;
+        margin-inline: 8px;
         width: calc(100% + 16px);
     }
 }

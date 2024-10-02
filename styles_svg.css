@@ -7,10 +7,6 @@
     z-index: 2;
 }
 
-.cross_1_svg {
-    top: -193px;
-    right: 10%;
-}
 
 .cross_2_svg {
     top: 140px;
@@ -166,7 +162,7 @@
 
 .birds_1_svg {
     top: 0;
-    right: 4%;
+    right: -4%;
 }
 
 .cross_7_svg {
@@ -295,7 +291,7 @@
 
 #car {
     position: absolute;
-    display: none;
+    /*display: none;*/
     /*left: 50%;*/
     /*transform: translateX(-50%);*/
     /*transform: rotateX(180deg);*/

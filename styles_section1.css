@@ -90,7 +90,7 @@ header {
         }
     }
     @media (min-width: 1281px) {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -102,7 +102,7 @@ header {
     gap: 40px;
 
     @media (max-width: 1280px) {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -198,13 +198,14 @@ header {
 
 .section_1 {
     position: relative;
-    /*height: 100vh;*/
     overflow: hidden;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 780px;
+    height: 770px;
+    background: #C7E8BC;
+
 
 }
 
@@ -215,14 +216,33 @@ header {
 
 
 .brightRound_container {
-
+    width: 446px;
+    height: 436px;
     position: relative;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media (max-width: 1024px) {
+        width: 344px;
+        height: 336px;
+    }
+    @media (max-width: 768px) {
+        width: 312px;
+        height: 303px;
+    }
+    @media (max-width: 640px) {
+        width: 286px;
+        height: 279px;
+    }
+
+}
+
+.main_svg {
+    width: 100%;
+    height: 100%;
 }
 
 .brightRound_texts_wrapper {
@@ -239,13 +259,32 @@ header {
     & > h1 {
         width: 374px;
         height: 220px;
-        font-family: 'Manrope';
+        font-family: Manrope;
         font-style: normal;
         font-weight: 800;
         font-size: 44px;
         line-height: 55px;
         text-align: center;
         color: #000000;
+        @media (max-width: 1024px) {
+            margin-top: 70px;
+            width: 344px;
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 44px;
+
+        }
+        @media (max-width: 768px) {
+            width: 344px;
+            font-size: 32px;
+            line-height: 39px;
+        }
+        @media (max-width: 640px) {
+            width: 288px;
+            font-size: 28px;
+            line-height: 35px;
+
+        }
     }
 }
 
@@ -255,6 +294,17 @@ header {
     left: 2% !important;
     top: 25px !important;
 
+
+    @media (max-width: 1440px) {
+        left: -12% !important;
+    }
+    @media (max-width: 1024px) {
+        width: 143px;
+        height: 237px;
+        left: -6% !important;
+    }
+
+
 }
 
 .apple_svg {
@@ -262,12 +312,47 @@ header {
     left: 54.5% !important;
     top: 0 !important;
 
+    @media (max-width: 1440px) {
+        top: -12px !important;
+
+    }
+    @media (max-width: 1280px) {
+        top: -40px !important;
+        left: 50% !important;
+
+    }
+    @media (max-width: 1024px) {
+        width: 170px !important;
+        height: 150px !important;
+        top: -10px !important;
+        left: 52% !important;
+
+    }
+    @media (max-width: 640px) {
+        top: 20px !important;
+        left: 36% !important;
+        width: 150px !important;
+        height: 150px !important;
+
+    }
+
 }
 
 .berry_svg {
     position: absolute !important;
     left: 22% !important;
     top: 470px !important;
+    @media (max-width: 1440px) {
+        left: 8% !important;
+    }
+    @media (max-width: 1024px) {
+        width: 189px !important;
+        height: 150px !important;
+    }
+    @media (max-width: 640px) {
+        top: 600px !important;
+    }
+
 
 }
 
@@ -275,32 +360,128 @@ header {
     position: absolute !important;
     left: 63% !important;
     top: 370px !important;
+    @media (max-width: 1440px) {
+        left: 65% !important;
+        top: 385px !important;
 
+    }
+    @media (max-width: 1024px) {
+        width: 179px !important;
+        height: 126px !important;
+    }
+}
+
+.cross_1_svg {
+    position: absolute !important;
+    top: 670px !important;
+    left: 53% !important;
 }
 
 
 .spraga_juice_1 {
     position: absolute !important;
+    z-index: 2 !important;
     left: 22% !important;
     top: -80px !important;
+    @media (max-width: 1440px) {
+        left: 16% !important;
+    }
+    @media (max-width: 1280px) {
+        rotate: -15deg;
+        top: -90px !important;
+        left: 11% !important;
+    }
+    @media (max-width: 1024px) {
+        height: 218px !important;
+        top: -40px !important ;
+        rotate: -20deg !important;
+    }
+    @media (max-width: 768px) {
+        height: 187px !important;
+
+    }
 }
 
 .spraga_juice_2 {
     position: absolute !important;
+    z-index: 2 !important;
     left: 65% !important;
     top: -100px !important;
+    @media (max-width: 1440px) {
+        left: 70% !important;
+    }
+    @media (max-width: 1280px) {
+        rotate: 15deg !important;
+        left: 73% !important;
+    }
+    @media (max-width: 1024px) {
+        height: 264px !important;
+        left: 75% !important;
+        top: 0 !important;
+    }
+    @media (max-width: 768px) {
+        height: 198px !important;
+
+    }
+
+
 }
 
 .spraga_juice_3 {
+    z-index: 2 !important;
     position: absolute !important;
     top: 280px !important;
     left: 13% !important;
+    @media (max-width: 1440px) {
+        left: -3% !important;
+    }
+    @media (max-width: 1280px) {
+        rotate: 10deg !important;
+        left: -7% !important;
+    }
+    @media (max-width: 1024px) {
+        height: 288px !important;
+        top: 375px !important;
+        left: -3% !important;
+    }
+    @media (max-width: 768px) {
+        height: 249px !important;
+
+    }
+    @media (max-width: 640px) {
+        height: 270px !important;
+        top: 520px !important;
+
+    }
 }
 
 .spraga_juice_4 {
+    z-index: 2 !important;
     position: absolute !important;
     left: 75% !important;
     top: 240px !important;
+    @media (max-width: 1440px) {
+        top: 290px !important;
+        left: 76% !important;
+    }
+    @media (max-width: 1024px) {
+        height: 218px;
+        top: 380px !important;
+        rotate: 10deg !important;
+    }
+    @media (max-width: 768px) {
+        height: 171px !important;
+
+    }
+
+    @media (max-width: 640px) {
+        left: 58% !important;
+        top: 400px !important;
+        rotate: -5deg !important;
+        height: 200px !important;
+        width: 200px !important;
+
+    }
 }
 
 .spraga_juice_5 {
@@ -308,56 +489,108 @@ header {
     left: -10% !important;
     bottom: 0 !important;
     rotate: -50deg !important;
+    @media (max-width: 1440px) {
+        display: none !important;
+    }
 }
 
 .spraga_juice_6 {
     position: absolute !important;
-
     rotate: 30deg !important;
     left: 95% !important;
     top: -50px !important;
+    @media (max-width: 1440px) {
+        display: none !important;
+    }
 }
 
 .cross_11_svg {
     position: absolute !important;
     left: 18% !important;
     top: 220px !important;
+    @media (max-width: 1440px) {
+        left: 12% !important;
+    }
+    @media (max-width: 1280px) {
+        display: none !important;
+    }
 }
 
 .cross_12_svg {
     position: absolute !important;
     left: 10% !important;
     top: 500px !important;
+    @media (max-width: 1440px) {
+        display: none !important;
+    }
 }
 
 .cross_13_svg {
     position: absolute !important;
     left: 40% !important;
     top: 50px !important;
+    @media (max-width: 1440px) {
+        left: 35% !important;
+    }
+    @media (max-width: 640px) {
+        display: none !important;
+    }
 }
 
 .cross_14_svg {
     position: absolute !important;
     left: 6% !important;
     top: 600px !important;
+    @media (max-width: 1440px) {
+        display: none !important;
+    }
 }
 
 .cloud_8_svg {
     position: absolute !important;
     left: 13% !important;
     top: -15px !important;
+    @media (max-width: 1440px) {
+        left: 0 !important;
+        top: -30px !important;
+    }
+    @media (max-width: 1280px) {
+        display: none !important;
+    }
 }
+
 
 .cloud_9_svg {
     position: absolute !important;
     left: 80% !important;
     top: 100px !important;
+    @media (max-width: 1440px) {
+        left: 90% !important;
+        top: 120px !important;
+    }
+    @media (max-width: 1280px) {
+        display: none !important;
+    }
 }
 
 .birds_3_svg {
     position: absolute !important;
     left: 29% !important;
     top: 300px !important;
+
+    @media (max-width: 1440px) {
+        left: 20% !important;
+    }
+    @media (max-width: 1280px) {
+        left: 15% !important;
+    }
+    @media (max-width: 1024px) {
+        left: 5% !important;
+    }
+    @media (max-width: 640px) {
+        display: none !important;
+    }
+
 }
 
 .cap_6_svg {
@@ -365,6 +598,13 @@ header {
     left: 5% !important;
     top: 370px !important;
     rotate: -30deg !important;
+    @media (max-width: 1440px) {
+        top: 570px !important;
+        left: 1% !important;
+    }
+    @media (max-width: 1280px) {
+        display: none !important;
+    }
 }
 
 .cap_7_svg {
@@ -372,6 +612,19 @@ header {
     left: 90% !important;
     top: 50px !important;
     rotate: -30deg !important;
+
+    @media (max-width: 1440px) {
+        top: 140px !important;
+        left: 96% !important;
+    }
+    @media (max-width: 1024px) {
+        left: 91% !important;
+        top: 200px !important;
+    }
+    @media (max-width: 640px) {
+        display: none !important;
+    }
+
 }
 
 .cap_8_svg {
@@ -379,6 +632,15 @@ header {
     left: 87% !important;
     top: 630px !important;
     rotate: 30deg !important;
+
+
+    @media (max-width: 1440px) {
+        left: 96% !important;
+    }
+    @media (max-width: 1280px) {
+        display: none !important;
+    }
+
 }
 
 .star_3_svg {
@@ -386,6 +648,19 @@ header {
     left: 65% !important;
     top: 370px !important;
     rotate: -30deg !important;
+
+    @media (max-width: 1440px) {
+        left: 72% !important;
+    }
+    @media (max-width: 1280px) {
+        left: 77% !important;
+    }
+    @media (max-width: 1024px) {
+        top: 300px !important;
+    }
+    @media (max-width: 640px) {
+        display: none !important;
+    }
 }
 
 .text_parallax {
@@ -396,37 +671,127 @@ header {
     line-height: 53px;
     letter-spacing: 0.0025em;
     color: #080807;
-    padding: 10px 21px;
-    border-radius: 30px;
+    padding: 5px 15px;
+    border-radius: 50px;
     position: absolute !important;
+    @media (max-width: 1024px) {
+        font-family: Montserrat;
+        font-size: 25px;
+        font-weight: 800;
+        line-height: 40px;
+        letter-spacing: 0.0025em;
+    }
+    @media (max-width: 768px) {
+        font-size: 19px;
+        font-weight: 800;
+        line-height: 33px;
+
+    }
 }
 
 .text_1 {
+    z-index: 3;
     background: #FFDAA5;
     left: 11% !important;
     top: 160px !important;
     rotate: -18deg !important;
+
+    @media (max-width: 1440px) {
+        left: 2% !important;
+    }
+    @media (max-width: 1280px) {
+        top: 180px !important;
+
+    }
+    @media (max-width: 768px) {
+        top: 170px !important;
+        left: 6% !important;
+
+    }
+    @media (max-width: 640px) {
+        top: 170px !important;
+        left: 11% !important;
+
+    }
+
+
 }
 
 .text_2 {
+    z-index: 3;
     background: #EAD966;
     left: 61% !important;
     top: 150px !important;
     rotate: 4deg !important;
+    @media (max-width: 1440px) {
+        left: 65% !important;
+    }
+    @media (max-width: 1280px) {
+        top: 110px !important;
+        rotate: 20deg !important;
+    }
+    @media (max-width: 1024px) {
+        top: 100px !important;
+        left: 62% !important;
+    }
+    @media (max-width: 768px) {
+        top: 80px !important;
+
+    }
+
+
 }
 
 .text_3 {
+    z-index: 3;
     background: #FFBABF;
     left: 27% !important;
     top: 450px !important;
     rotate: -9deg !important;
+    @media (max-width: 1440px) {
+        left: 17% !important;
+    }
+    @media (max-width: 1280px) {
+        top: 500px !important;
+        left: 20% !important;
+    }
+    @media (max-width: 1024px) {
+        top: 450px !important;
+        left: 15% !important;
+    }
+    @media (max-width: 640px) {
+        top: 620px !important;
+        left: 33% !important;
+        rotate: 3deg !important;
+
+    }
+
 }
 
 .text_4 {
+    z-index: 3;
     background: #C5D200;
     left: 71% !important;
     top: 520px !important;
     rotate: 8deg !important;
+    @media (max-width: 1440px) {
+        top: 560px !important;
+    }
+    @media (max-width: 1024px) {
+        top: 500px !important;
+        left: 60% !important; ;
+    }
+    @media (max-width: 768px) {
+        top: 480px !important;
+        left: 68% !important;
+
+    }
+    @media (max-width: 640px) {
+        top: 550px !important;
+        left: 50% !important;
+
+    }
+
 }
 
 

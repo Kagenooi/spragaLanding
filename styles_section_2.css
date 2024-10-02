@@ -1,6 +1,10 @@
 .section_2 {
     margin-top: 100px;
     position: relative;
+    perspective: 1px;
+    @media (max-width: 640px ) {
+        margin-top: 120px;
+    }
 
 }
 
@@ -141,7 +145,6 @@
 
 .union_ltd_text_wrapper b {
     font-weight: 700;
-    /*color: red;*/
 }
 
 
@@ -170,6 +173,8 @@
     top: -200px;
     left: 50%;
     transform: translateX(-50%);
+
+
 }
 
 .curve_line_xl {
@@ -179,6 +184,7 @@
 }
 
 .curve_line_md {
+    top: -245px;
     @media (min-width: 1025px) {
         display: none;
     }
@@ -188,6 +194,7 @@
 }
 
 .curve_line_sm {
+    top: -260px;
     @media (min-width: 769px) {
         display: none;
     }
@@ -197,6 +204,7 @@
 }
 
 .curve_line_xs {
+    top: -275px;
     @media (min-width: 641px) {
         display: none;
     }
@@ -218,5 +226,15 @@
     transform: translate(-50%, -50%);
 
     z-index: 4;
+}
+
+.union_description {
+    padding-inline: 12px;
+    text-wrap: balance;
+
+
+    @media (max-width: 640px) {
+        line-height: 30px;
+    }
 }
 
