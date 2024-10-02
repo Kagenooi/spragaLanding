@@ -8,6 +8,12 @@
 
 }
 
+.curve_fix {
+    position: relative;
+    min-width: 1200px;
+    max-width: 1200px;
+}
+
 .union_ltd_block {
     display: flex;
     flex-direction: column;
