@@ -168,7 +168,7 @@
         left: 43%;
     }
     @media (max-width: 1024px) {
-        left: 50%;
+        left: 0px;
         height: 3240px;
     }
     @media (max-width: 640px) {
