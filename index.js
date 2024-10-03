@@ -20,7 +20,7 @@ const parallaxSVGs = document.querySelectorAll(".parallax_svg");
 const handleScroll = () => {
 
     // if (window.innerWidth < 1024) {
-        // return;
+    //     return;
     // }
     const scrollPosition = window.pageYOffset; // Get the current scroll position
 
@@ -98,9 +98,9 @@ const updateCarPositionOnPath2 = (scrollRatio) => {
     transformPath2(car, point, angle);
 };
 const updateCarPosition = () => {
-    // if (window.innerWidth < 1024) {
-        // return;
-    // }
+    if (window.innerWidth < 1024) {
+        return;
+    }
     car.style.display = "block";
     const scrollPosition = window.pageYOffset-2800-(window.innerHeight/2);
     const totalHeight = document.body.scrollHeight - window.innerHeight;
