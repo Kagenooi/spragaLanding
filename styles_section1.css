@@ -216,6 +216,7 @@ header {
 
 
 .brightRound_container {
+
     width: 446px;
     height: 436px;
     position: relative;
@@ -255,7 +256,6 @@ header {
     height: max-content;
     padding: 0 50px 0 50px;
 
-
     & > h1 {
         width: 374px;
         height: 220px;
@@ -291,17 +291,28 @@ header {
 
 .ananas_svg {
     position: absolute !important;
-    left: 2% !important;
-    top: 25px !important;
-
+    left: 15% !important;
+    top: 100px !important;
 
     @media (max-width: 1440px) {
-        left: -12% !important;
+        left: 8% !important;
+    }
+    @media (max-width: 1280px) {
+        left: 1% !important;
     }
     @media (max-width: 1024px) {
-        width: 143px;
-        height: 237px;
         left: -6% !important;
+    }
+    @media (max-width: 768px) {
+        height: 280px !important;
+        width: 190px!important;
+        top: 75px!important;
+        left: -6% !important;
+    }
+    @media (max-width: 640px) {
+
+        top: 75px!important;
+        left: -24% !important;
     }
 
 
@@ -309,30 +320,46 @@ header {
 
 .apple_svg {
     position: absolute !important;
-    left: 54.5% !important;
-    top: 0 !important;
+
+    height: 220px!important;
+
+    left: 62% !important;
+    top: 410px !important;
+
+
+
 
     @media (max-width: 1440px) {
-        top: -12px !important;
 
+        left: 65% !important;
+        top: 385px !important;
     }
+
     @media (max-width: 1280px) {
-        top: -40px !important;
-        left: 50% !important;
+        top: 395px !important;
+        left: 59% !important;
 
     }
     @media (max-width: 1024px) {
-        width: 170px !important;
-        height: 150px !important;
-        top: -10px !important;
-        left: 52% !important;
+        width: 180px!important;
+        height: 180px!important;
+        top: 445px !important;
+        left: 59% !important;
 
     }
+
+    @media (max-width: 768px) {
+height: 150px !important;
+width: 173px !important;
+        top: 500px !important;
+        left: 44% !important;
+
+    }
+
+
     @media (max-width: 640px) {
-        top: 20px !important;
+        top: 440px !important;
         left: 36% !important;
-        width: 150px !important;
-        height: 150px !important;
 
     }
 
@@ -343,31 +370,67 @@ header {
     left: 22% !important;
     top: 470px !important;
     @media (max-width: 1440px) {
-        left: 8% !important;
+        left: 16.5% !important;
+    }
+
+    @media (max-width: 1280px) {
+        left: 7% !important;
+        top: 500px !important;
     }
     @media (max-width: 1024px) {
-        width: 189px !important;
-        height: 150px !important;
+        left: -3% !important;
+        top: 500px !important;
+    }
+
+
+
+    @media (max-width: 768px) {
+        height: 157px !important;
+        width: 192px !important;
+        left: -2% !important;
+        top: 510px !important;
     }
     @media (max-width: 640px) {
-        top: 600px !important;
+        width: 167px !important;
+        height: 132px !important;
+
     }
 
 
 }
 
 .lemon_svg {
+
+width:257px !important;
+    height: 180px !important;
     position: absolute !important;
-    left: 63% !important;
-    top: 370px !important;
+    left: 55% !important;
+    top: 140px !important;
+
+
+
     @media (max-width: 1440px) {
-        left: 65% !important;
-        top: 385px !important;
+        top: 100px !important;
+
 
     }
+
     @media (max-width: 1024px) {
-        width: 179px !important;
-        height: 126px !important;
+        top: 90px !important;
+        left: 48% !important;
+    }
+
+    @media (max-width: 768px) {
+        width: 176px !important;
+        height: 123px !important;
+        left: 53%!important;
+        top: 140px!important;
+    }
+    @media (max-width: 640px) {
+        width: 190px !important;
+        height: 140px !important;
+        left: 25%!important;
+        top: 110px!important;
     }
 }
 
@@ -375,54 +438,80 @@ header {
     position: absolute !important;
     top: 670px !important;
     left: 53% !important;
+    @media (max-width: 768px) {
+      display: none!important;
+    }
 }
 
 
 .spraga_juice_1 {
     position: absolute !important;
-    z-index: 2 !important;
+    /*z-index: 2 !important;*/
     left: 22% !important;
-    top: -80px !important;
+    top: -120px !important;
     @media (max-width: 1440px) {
         left: 16% !important;
     }
     @media (max-width: 1280px) {
-        rotate: -15deg;
-        top: -90px !important;
+        rotate: -3deg!important;
+        top: -93px !important;
         left: 11% !important;
     }
     @media (max-width: 1024px) {
-        height: 218px !important;
-        top: -40px !important ;
-        rotate: -20deg !important;
+        width: 300px!important;
+        height: 390px!important;
+        left: 5%!important;
+        top: -70px !important ;
+        rotate: -6deg !important;
     }
     @media (max-width: 768px) {
-        height: 187px !important;
+        height: 340px !important;
+        width: 300px!important;
+        top: -30px !important;
+        rotate: 5deg !important;
 
+    }
+    @media (max-width: 640px) {
+        height: 280px !important;
+        width: 240px!important;
+        left: -15%!important;
     }
 }
 
 .spraga_juice_2 {
     position: absolute !important;
     z-index: 2 !important;
-    left: 65% !important;
+    left: 63% !important;
     top: -100px !important;
+    rotate: -4deg!important;
     @media (max-width: 1440px) {
-        left: 70% !important;
+        left: 66% !important;
     }
     @media (max-width: 1280px) {
-        rotate: 15deg !important;
-        left: 73% !important;
+        rotate: 2deg !important;
+        left: 67% !important;
+        top: -80px !important;
     }
     @media (max-width: 1024px) {
-        height: 264px !important;
-        left: 75% !important;
-        top: 0 !important;
+        height: 360px !important;
+        left: 67% !important;
+        top: -50px !important;
     }
     @media (max-width: 768px) {
-        height: 198px !important;
+        height: 310px !important;
+        top: -20px !important;
+        left: 68% !important;
+        rotate: -6deg !important;
 
     }
+    @media (max-width: 640px) {
+        height: 280px !important;
+        top: 10px !important;
+        left: 55% !important;
+        rotate: -6deg !important;
+
+    }
+
 
 
 }
@@ -433,60 +522,85 @@ header {
     top: 280px !important;
     left: 13% !important;
     @media (max-width: 1440px) {
-        left: -3% !important;
+        left: -1.5% !important;
     }
     @media (max-width: 1280px) {
-        rotate: 10deg !important;
+        rotate: 26deg !important;
         left: -7% !important;
+
     }
     @media (max-width: 1024px) {
-        height: 288px !important;
-        top: 375px !important;
-        left: -3% !important;
+        width: 440px !important;
+        height: 380px !important;
+        top: 340px !important;
+        left: -9% !important;
     }
     @media (max-width: 768px) {
-        height: 249px !important;
+        height: 303px !important;
+        rotate: 25deg !important;
+        left: -11%!important;
+        top: 370px !important;
 
     }
     @media (max-width: 640px) {
         height: 270px !important;
-        top: 520px !important;
-
+        rotate: 30deg !important;
+        left: -35%!important;
+        top: 440px !important;
     }
+
 }
 
 .spraga_juice_4 {
     z-index: 2 !important;
     position: absolute !important;
-    left: 75% !important;
-    top: 240px !important;
+    left: 70% !important;
+    top: 160px !important;
     @media (max-width: 1440px) {
-        top: 290px !important;
-        left: 76% !important;
+        left: 74% !important;
+        /*top: 290px !important;*/
+        /*left: 76% !important;*/
+    }
+    @media (max-width: 1280px) {
+        left: 70% !important;
+        top: 215px !important;
+        /*top: 290px !important;*/
+        /*left: 76% !important;*/
     }
     @media (max-width: 1024px) {
-        height: 218px;
-        top: 380px !important;
-        rotate: 10deg !important;
+        /*height: 218px;*/
+        height: 375px!important;
+        width: 270px!important;
+        top: 300px !important;
+        rotate: -2deg !important;
+        left: 69% !important;
     }
     @media (max-width: 768px) {
-        height: 171px !important;
-
+        height: 360px !important;
+        left:50% !important;
+        top: 350px!important;
+        rotate:3deg !important;
     }
-
     @media (max-width: 640px) {
-        left: 58% !important;
-        top: 400px !important;
-        rotate: -5deg !important;
-        height: 200px !important;
-        width: 200px !important;
-
+        height: 310px !important;
+        left:40% !important;
+        top: 320px!important;
+        rotate:-6deg !important;
     }
+
+    /*@media (max-width: 640px) {*/
+    /*    left: 58% !important;*/
+    /*    top: 400px !important;*/
+    /*    rotate: -5deg !important;*/
+    /*    height: 200px !important;*/
+    /*    width: 200px !important;*/
+
+    /*}*/
 }
 
 .spraga_juice_5 {
     position: absolute !important;
-    left: -10% !important;
+    left: -12.3% !important;
     bottom: 0 !important;
     rotate: -50deg !important;
     @media (max-width: 1440px) {
@@ -497,8 +611,8 @@ header {
 .spraga_juice_6 {
     position: absolute !important;
     rotate: 30deg !important;
-    left: 95% !important;
-    top: -50px !important;
+    left: 97% !important;
+    top: -170px !important;
     @media (max-width: 1440px) {
         display: none !important;
     }
@@ -506,22 +620,25 @@ header {
 
 .cross_11_svg {
     position: absolute !important;
-    left: 18% !important;
-    top: 220px !important;
-    @media (max-width: 1440px) {
-        left: 12% !important;
+    left: 45% !important;
+    top: 10px !important;
+    @media (max-width: 768px) {
+        top: 30px!important;
     }
-    @media (max-width: 1280px) {
-        display: none !important;
+    @media (max-width: 640px) {
+        top: 30px!important;
+        height: 90px!important;
     }
 }
 
 .cross_12_svg {
     position: absolute !important;
-    left: 10% !important;
-    top: 500px !important;
-    @media (max-width: 1440px) {
-        display: none !important;
+    left: 37% !important;
+    top: 570px !important;
+
+    @media (max-width: 640px) {
+        left: 48% !important;
+        top: 600px !important;
     }
 }
 
@@ -532,15 +649,20 @@ header {
     @media (max-width: 1440px) {
         left: 35% !important;
     }
+    @media (max-width: 768px) {
+        top: 80px!important;
+        left: 38% !important;
+
+    }
     @media (max-width: 640px) {
-        display: none !important;
+       left: 25%!important;
     }
 }
 
 .cross_14_svg {
     position: absolute !important;
     left: 6% !important;
-    top: 600px !important;
+    top: 560px !important;
     @media (max-width: 1440px) {
         display: none !important;
     }
@@ -548,25 +670,28 @@ header {
 
 .cloud_8_svg {
     position: absolute !important;
-    left: 13% !important;
-    top: -15px !important;
+    left: 6% !important;
+    top: 10px !important;
     @media (max-width: 1440px) {
-        left: 0 !important;
-        top: -30px !important;
+        left: -6.5% !important;
     }
     @media (max-width: 1280px) {
-        display: none !important;
+        top: -10px !important;
+        left: -2% !important;
+    }
+    @media (max-width: 1024px) {
+     display: none!important;
     }
 }
 
 
 .cloud_9_svg {
     position: absolute !important;
-    left: 80% !important;
-    top: 100px !important;
+    left: 55% !important;
+    top: 600px !important;
     @media (max-width: 1440px) {
-        left: 90% !important;
-        top: 120px !important;
+        left: 59% !important;
+        top: 565px !important;
     }
     @media (max-width: 1280px) {
         display: none !important;
@@ -575,21 +700,21 @@ header {
 
 .birds_3_svg {
     position: absolute !important;
-    left: 29% !important;
-    top: 300px !important;
+    left: 11% !important;
+    top: 250px !important;
 
     @media (max-width: 1440px) {
-        left: 20% !important;
+        left: 2% !important;
+        top: 270px!important;
     }
     @media (max-width: 1280px) {
-        left: 15% !important;
+        left: 4% !important;
+        top: 310px!important;
     }
     @media (max-width: 1024px) {
-        left: 5% !important;
-    }
-    @media (max-width: 640px) {
         display: none !important;
     }
+
 
 }
 
@@ -599,12 +724,9 @@ header {
     top: 370px !important;
     rotate: -30deg !important;
     @media (max-width: 1440px) {
-        top: 570px !important;
-        left: 1% !important;
-    }
-    @media (max-width: 1280px) {
         display: none !important;
     }
+
 }
 
 .cap_7_svg {
@@ -614,30 +736,36 @@ header {
     rotate: -30deg !important;
 
     @media (max-width: 1440px) {
-        top: 140px !important;
-        left: 96% !important;
+        top: 65px !important;
+        left: 95% !important;
+    }
+    @media (max-width: 1280px) {
+        top: 137px !important;
+        left: 93% !important;
+        rotate: -30deg !important;
     }
     @media (max-width: 1024px) {
-        left: 91% !important;
-        top: 200px !important;
-    }
-    @media (max-width: 640px) {
         display: none !important;
     }
+
 
 }
 
 .cap_8_svg {
     position: absolute !important;
     left: 87% !important;
-    top: 630px !important;
+    top: 600px !important;
     rotate: 30deg !important;
 
 
     @media (max-width: 1440px) {
         left: 96% !important;
+
     }
     @media (max-width: 1280px) {
+        left: 93% !important;
+    }
+    @media (max-width: 1024px) {
         display: none !important;
     }
 
@@ -645,18 +773,24 @@ header {
 
 .star_3_svg {
     position: absolute !important;
-    left: 65% !important;
-    top: 370px !important;
+    left: 85% !important;
+    top: 320px !important;
     rotate: -30deg !important;
 
     @media (max-width: 1440px) {
-        left: 72% !important;
+        left: 94% !important;
     }
     @media (max-width: 1280px) {
+        top: 300px !important;
         left: 77% !important;
     }
     @media (max-width: 1024px) {
         top: 300px !important;
+        left: 75% !important;
+    }
+    @media (max-width: 768px) {
+        top: 250px !important;
+        left: 75% !important;
     }
     @media (max-width: 640px) {
         display: none !important;
@@ -692,25 +826,29 @@ header {
 .text_1 {
     z-index: 3;
     background: #FFDAA5;
-    left: 11% !important;
-    top: 160px !important;
-    rotate: -18deg !important;
+    left: 23% !important;
+    top: 220px !important;
+    rotate: -10deg !important;
 
     @media (max-width: 1440px) {
-        left: 2% !important;
+        left:20% !important ;
+
     }
     @media (max-width: 1280px) {
-        top: 180px !important;
+        top: 220px !important;
+        left: 16% !important;
+        rotate:-5deg !important;
 
     }
     @media (max-width: 768px) {
-        top: 170px !important;
-        left: 6% !important;
+        top: 220px !important;
+        left: 13% !important;
 
     }
     @media (max-width: 640px) {
-        top: 170px !important;
-        left: 11% !important;
+        top: 200px !important;
+        left: 8% !important;
+        rotate:-20deg !important;
 
     }
 
@@ -718,27 +856,37 @@ header {
 }
 
 .text_2 {
+
     z-index: 3;
     background: #EAD966;
-    left: 61% !important;
-    top: 150px !important;
-    rotate: 4deg !important;
+    left: 69% !important;
+    top: 550px !important;
+    rotate: 8deg !important;
     @media (max-width: 1440px) {
-        left: 65% !important;
+        top: 540px !important;
+        left: 74% !important;
     }
     @media (max-width: 1280px) {
-        top: 110px !important;
-        rotate: 20deg !important;
+        top: 610px !important;
+        left: 70% !important;
+
     }
+
+
     @media (max-width: 1024px) {
-        top: 100px !important;
-        left: 62% !important;
+        top: 560px !important;
+        left: 67% !important; ;
     }
     @media (max-width: 768px) {
-        top: 80px !important;
+        top: 620px !important;
+        left: 53% !important;
 
     }
+    @media (max-width: 640px) {
+        top: 550px !important;
+        left: 50% !important;
 
+    }
 
 }
 
@@ -746,23 +894,30 @@ header {
     z-index: 3;
     background: #FFBABF;
     left: 27% !important;
-    top: 450px !important;
+    top: 400px !important;
     rotate: -9deg !important;
     @media (max-width: 1440px) {
         left: 17% !important;
     }
     @media (max-width: 1280px) {
-        top: 500px !important;
-        left: 20% !important;
+        top: 420px !important;
+        left: 13% !important;
+        rotate: -17deg!important;
     }
     @media (max-width: 1024px) {
-        top: 450px !important;
-        left: 15% !important;
+        top: 490px !important;
+        left: 8% !important;
+    }
+
+    @media (max-width: 768px) {
+        top: 510px !important;
+        left: 13% !important;
+
     }
     @media (max-width: 640px) {
-        top: 620px !important;
-        left: 33% !important;
-        rotate: 3deg !important;
+        top: 530px !important;
+        left: 24% !important;
+        rotate: -30deg !important;
 
     }
 
@@ -771,24 +926,31 @@ header {
 .text_4 {
     z-index: 3;
     background: #C5D200;
-    left: 71% !important;
-    top: 520px !important;
-    rotate: 8deg !important;
+
+    left: 61% !important;
+    top: 70px !important;
+    rotate: 4deg !important;
     @media (max-width: 1440px) {
-        top: 560px !important;
+        left: 62% !important;
+    }
+    @media (max-width: 1280px) {
+        top: 105px !important;
+        rotate: 10deg !important;
     }
     @media (max-width: 1024px) {
-        top: 500px !important;
-        left: 60% !important; ;
+        top: 100px !important;
+        left: 62% !important;
     }
     @media (max-width: 768px) {
-        top: 480px !important;
-        left: 68% !important;
+        left: 62% !important;
+        top: 120px !important;
+        rotate:3deg !important;
 
     }
     @media (max-width: 640px) {
-        top: 550px !important;
-        left: 50% !important;
+        left: 46% !important;
+        top: 120px !important;
+        rotate:3deg !important;
 
     }
 

@@ -9,9 +9,23 @@
 }
 
 .curve_fix {
-    position: relative;
-    min-width: 1200px;
-    max-width: 1200px;
+    height: 2970px;
+    width: 1210px;
+    position: absolute;
+    top: 0;
+    left: 43%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    @media (max-width: 1440px) {
+        left: 43%;
+    }
+    @media (max-width: 1024px) {
+        left: 50%;
+        height: 3240px;
+    }
+    @media (max-width: 640px) {
+        height: 3660px;
+    }
 }
 
 .union_ltd_block {
@@ -130,7 +144,7 @@
 .curve_line_wrapper {
     position: relative;
     width: 100%;
-    max-width: 1920px;
+    max-width: 1320px;
     margin: 0 auto;
 }
 
@@ -161,7 +175,7 @@
     width: 1210px;
     position: absolute;
     top: -20px;
-    left: 260px;
+    left: 0px;
     overflow: hidden;
 
     @media (max-width: 1440px) {
