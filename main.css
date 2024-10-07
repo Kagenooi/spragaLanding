@@ -58,6 +58,12 @@ button {
     overflow: hidden;
 }
 
+.height_width_full{
+    width: 100%;
+    height: 100%;
+}
+
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -66,6 +72,13 @@ button {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+
+.video_player_st{
+    height: 100%;
+    width: 100% ;
+ object-fit: cover;
 }
 
 .swiper-slide img {
@@ -167,43 +180,16 @@ button {
     line-height: 34px !important;
 }
 
-/*#movingPoint {*/
-/*    transition: transform 0.1s ease-out;*/
-/*}*/
+
 #car {
 
-
-
-    /*transition: transform 0.1s ease-out;*/
 }
-
-/*@keyframes svg_animation {*/
-/*    0% {*/
-/*        transform: translateY(0px) rotate(0deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform: translateY(300px) rotate(360deg);*/
-/*    }*/
-/*}*/
-
-
-/*@keyframes svg_animation {*/
-/*    0% {*/
-/*        opacity: 0.2;*/
-/*    }*/
-/*    50% {*/
-/*        opacity: 1;*/
-/*    }*/
-/*    100% {*/
-/*        opacity: 0.2;*/
-/*    }*/
-/*}*/
-
-/*.svg_animation_styles {*/
-/*    animation: :appear 5s linear infinite;*/
-
-/*    animation: svg_animation linear;*/
-/*    animation-timeline: view();*/
-/*}*/
-
-
+.color_green{
+    color: #9CFF1E;
+}
+.color_yellow{
+    color:#F0C45E;
+}
+.color_orange{
+    color: #E29723;
+}

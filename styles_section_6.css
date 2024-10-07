@@ -90,6 +90,10 @@
     }
 }
 
+.kombucha_image_slider{
+    background-image:url(Svgs/SpragaKombucha.svg);
+}
+
 .slider_text_wrapper {
     position: absolute;
     text-align: left;

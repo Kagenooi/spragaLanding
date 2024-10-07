@@ -1,5 +1,28 @@
-const scene = document.getElementById("scene");
-new Parallax(scene);
+let parallaxInstance;
+
+const checkParallax = () => {
+    const scene = document.getElementById("scene");
+
+    if (window.innerWidth > 1024) {
+        if (!parallaxInstance) {
+            parallaxInstance = new Parallax(scene);
+        }
+    } else {
+        if (parallaxInstance) {
+            parallaxInstance.destroy();  // Destroy parallax instance
+            parallaxInstance = null;
+        }
+    }
+};
+
+// Initialize on page load
+checkParallax();
+
+// Listen for window resize to dynamically enable/disable parallax
+window.addEventListener("resize", checkParallax);
+
+
+
 
 const playButton = document.querySelector(".video_play_button");
 const videoPlayer = document.querySelector(".video_player");
@@ -19,9 +42,9 @@ const parallaxSVGs = document.querySelectorAll(".parallax_svg");
 // Function to handle parallax effect
 const handleScroll = () => {
 
-    // if (window.innerWidth < 1024) {
-    //     return;
-    // }
+    if (window.innerWidth < 1024) {
+        return;
+    }
     const scrollPosition = window.pageYOffset; // Get the current scroll position
 
     parallaxSVGs.forEach((svg, index) => {

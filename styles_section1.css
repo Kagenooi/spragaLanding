@@ -204,14 +204,24 @@ header {
     justify-content: center;
     align-items: center;
     height: 770px;
-    background: #C7E8BC;
 
 
+
+}
+.position_header_item{
+    position: absolute; top: -180px;
 }
 
 .scene {
     position: absolute;
     inset: 0;
+}
+
+
+
+
+.text_align_center{
+    text-align: center
 }
 
 

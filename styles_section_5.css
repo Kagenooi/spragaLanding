@@ -92,6 +92,9 @@
     flex-direction: column;
     row-gap: 16px;
 }
+.margin_top{
+    margin-top: 64px;
+}
 
 .natural_ingredients_image_wrapper {
     width: 1061px;

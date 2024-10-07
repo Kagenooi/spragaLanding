@@ -53,6 +53,16 @@
     transition: 300ms;
 }
 
+
+.bg_image_1{
+    background-image:url(Images/kombucha.png);
+}
+
+
+.bg_image_2{
+    background-image:url(Images/bioEnergy.png)
+}
+
 .gradient {
     position: absolute;
     display: flex;
@@ -64,6 +74,7 @@
     background-repeat: no-repeat;
     border-radius: 20px;
     background-size: cover;
+    background-image:url(Images/gradient.png)
 }
 
 .product_categories_block_img {
@@ -77,6 +88,9 @@
     margin-left: 64px;
     gap: 16px;
     width: 400px;
+    &>p{
+       color: #FFFFFF;
+    }
 
     @media (max-width: 640px) {
         margin: 0;
