@@ -8,13 +8,12 @@
     <link href="main.css" rel="stylesheet">
     <link href="fonts.css" rel="stylesheet">
     <link href="styles_section1.css" rel="stylesheet">
-
     <link href="styles_section_7.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;700&display=swap"
           rel="stylesheet">
-    <link href="node_modules/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+<!--    <link href="node_modules/swiper/swiper-bundle.min.css" rel="stylesheet"/>-->
 </head>
 <body>
 <div class="container">
@@ -41,6 +40,36 @@
             </div>
         </div>
     </header>
+    <div class="mobile_menu ">
+        <div class="mobile_menu_content">
+            <a class="mobile_nav_bar_item" href="#Home"><img alt="My SVG Image" class="header_title"
+                                                             src="Svgs/SpragaDefault.svg"/></a>
+            <nav class="mobile_menu_navigation">
+                <a class="xxs medium mobile_nav_bar_item" href="#About">About</a>
+                <a class="xxs medium mobile_nav_bar_item" href="#Categories">Categories</a>
+                <a class="xxs medium mobile_nav_bar_item" href="#How_spraga_is_made">How spraga is made</a>
+                <a class="xxs medium mobile_nav_bar_item" href="#Production_capacity">Production capacity</a>
+                <a class="xxs medium mobile_nav_bar_item" href="#Environmental_commitment">Environmental commitment</a>
+                <a class="xxs medium mobile_nav_bar_item" href="#Our_team">Our team</a>
+                <a class="xxs medium mobile_nav_bar_item" href="#Contacts">Contacts</a>
+            </nav>
+            <div class="mobile_menu_contacts">
+                <p class="ssm bold">+420 999 999 999</p>
+                <p class="ssm">Company@email.com</p>
+                <div>
+                    <img src="Svgs/Instagram.svg"/>
+                    <img src="Svgs/Facebook.svg"/>
+                    <img src="Svgs/Youtube.svg"/>
+                </div>
+            </div>
+            <p class="xxs">
+                Czech Republic, Bohemia, city, street, house
+            </p>
+            <button class="mobile_menu_close">
+                <img src="Svgs/CloseIcon.svg">
+            </button>
+        </div>
+    </div>
 
     <div class="general_terms_section">
         <div class="general_terms_section_left">
@@ -226,8 +255,8 @@
             </div>
         </div>
         <div class="general_nav_bar">
-            <a href="general_terms.html">General Terms and Conditions</a>
-            <a href="privacy_policy.html">Privacy Policy – Customers</a>
+            <a class="general_terms_link" href="general_terms.html">General Terms and Conditions</a>
+            <a class="privacy_policy_link" href="privacy_policy.html">Privacy Policy – Customers</a>
         </div>
 
     </div>
@@ -253,8 +282,8 @@
             </div>
             <div class="footer_top_right">
                 <div class="footer_top_right_company_name_wrapper">
-                    <p class="footer_xs bold">+420 999 999 999</p>
-                    <p class="footer_xs regular">Company@email.com</p>
+                    <a class="footer_xs bold text_decoration_none">+420 999 999 999</a>
+                    <a class="footer_xs regular text_decoration_none">Company@email.com</a>
                 </div>
                 <div class="footer_top_right_newsletter_wrapper">
                     <p class="footer_xs regular">Newsletter</p>
@@ -278,11 +307,11 @@
                 <p class="footer_xxs regular">Spraga</p>
             </div>
             <div class="footer_bottom_block_item footer_bottom_block_item_item">
-                <a class="footer_xxs regular " href="privacy_policy.html">Privacy policy</a>
+                <a class="footer_xxs regular text_decoration_none " href="privacy_policy.html">Privacy policy</a>
                 <div class="point"></div>
-                <p class="footer_xxs regular ">GDPR</p>
+                <a class="footer_xxs regular text_decoration_none">GDPR</a>
                 <div class="point"></div>
-                <a class="footer_xxs regular " href="general_terms.html">Terms and Conditions</a>
+                <a class="footer_xxs regular text_decoration_none" href="general_terms.html">Terms and Conditions</a>
             </div>
             <p class="footer_xxs regular ">
                 Created by Soltreex

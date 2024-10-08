@@ -354,3 +354,13 @@
     margin-top: 11px;
     column-gap: 5px;
 }
+
+.flag_image_wrapper{
+    width: 111px;
+    height:74px;
+}
+.flag_image{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}

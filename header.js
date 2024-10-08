@@ -39,3 +39,19 @@ closeButton.addEventListener("click", () => {
   menu.classList.remove("mobile_menu_show");
   body.classList.remove("overflow_hidden");
 });
+
+const generalTerms=document.querySelector(".general_terms_link");
+const privacyPolicy=document.querySelector(".privacy_policy_link");
+const paths = window.location.pathname;
+const page = paths.split("/").pop(); // Gets the last part of the path
+
+
+if (page === "privacy_policy.html") {
+  console.log("You are on the index page.");
+  privacyPolicy.style.color="#E29723";
+
+} else if (page === "general_terms.html") {
+  generalTerms.style.color="#E29723";
+} else {
+  console.log("You are on a different page.");
+}

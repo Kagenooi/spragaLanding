@@ -20,6 +20,7 @@
           rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </head>
 <body>
 
@@ -45,6 +46,7 @@
     </div>
 </header>
 <div class="mobile_menu ">
+<div class="mobile_menu_content">
     <a class="mobile_nav_bar_item" href="#Home"><img alt="My SVG Image" class="header_title"
                                                      src="Svgs/SpragaDefault.svg"/></a>
     <nav class="mobile_menu_navigation">
@@ -72,20 +74,23 @@
         <img src="Svgs/CloseIcon.svg">
     </button>
 </div>
+</div>
 <div class="overflow_hidden">
-    <!--    id="scene"-->
     <section class="section_1 ">
         <div class="scene" data-hover-only="true" id="scene" >
             <img class="ananas_svg" data-depth="0.1" src="Svgs/Ananas.svg"/>
             <img class="apple_svg" data-depth="0.1" src="Svgs/Apple.svg"/>
             <img class="berry_svg" data-depth="0.1" src="Svgs/Berry.svg"/>
             <img class="lemon_svg" data-depth="0.1" src="Svgs/Lemon.svg"/>
-            <img class="spraga_juice_1" data-depth="0.1" src="Svgs/SpragaJuice1.svg"/>
-            <img class="spraga_juice_2" data-depth="0.15" src="Svgs/SpragaJuice2.svg"/>
-            <img class="spraga_juice_3" data-depth="0.2" src="Svgs/SpragaJuice3.svg"/>
-            <img class="spraga_juice_4" data-depth="0.15" src="Svgs/SpragaJuice4.svg"/>
-            <img class="spraga_juice_5" data-depth="0.3" src="Svgs/SpragaJuice1.svg"/>
-            <img class="spraga_juice_6" data-depth="0.35" src="Svgs/SpragaJuice4.svg"/>
+
+
+            <img class="spraga_juice_3" data-depth="0.15" src="Images/SpragaJuice3.png"/>
+            <img class="spraga_juice_1" data-depth="0.15" src="Images/SpragaJuice1.png"/>
+            <img class="spraga_juice_2" data-depth="0.15" src="Images/SpragaJuice2.png"/>
+            <img class="spraga_juice_4" data-depth="0.15" src="Images/SpragaJuice4.png"/>
+
+            <img class="spraga_juice_5" data-depth="0.3" src="Images/SpragaJuice1.png"/>
+            <img class="spraga_juice_6" data-depth="0.35" src="Images/SpragaJuice4.png"/>
             <img class="cross_11_svg" data-depth="0.35" src="Svgs/CrossL.svg"/>
             <img class="cross_12_svg" data-depth="0.35" src="Svgs/CrossXs.svg"/>
             <img class="cross_13_svg" data-depth="0.55" src="Svgs/CrossXs.svg"/>
@@ -152,12 +157,12 @@
                         <div class="union_ltd_content">
                             <div class="swiper mySwiper">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide"><img src="Images/Fermentation.jpeg"
+                                    <div class="swiper-slide"><img src="Images/Fermentation.png"
                                                                  class="height_width_full" />
                                     </div>
                                     <div class="swiper-slide"><img src="Images/UkrainianFLag.png"
                                                                    class="height_width_full"/></div>
-                                    <div class="swiper-slide"><img src="Images/Fermentation.jpeg"
+                                    <div class="swiper-slide"><img src="Images/Fermentation.png"
                                                                    class="height_width_full"/>
                                     </div>
                                     <div class="swiper-slide"><img src="Images/UkrainianFLag.png"
@@ -1238,7 +1243,7 @@
                 <div class="svgs_wrapper">
                     <img class="birds_1_svg svg_positions parallax-svg" src="Svgs/Birds.svg"/>
                     <div class="fermentation_image_wrapper">
-                        <img class="fermentation_image" src="Images/Fermentation.jpeg"/>
+                        <img class="fermentation_image" src="Images/Fermentation.png"/>
                     </div>
                 </div>
                 <div class="natural_ingredients_advanced_texts block2_text">
@@ -1526,8 +1531,8 @@
 
 
                             </div>
-                            <div>
-                                <img src="Images/UkrainianFLag.png"/>
+                            <div class="flag_image_wrapper">
+                                <img class="flag_image" src="Images/UkrainianFLag.png"/>
                             </div>
                         </div>
                         <div class="go_to_website_bottom_block background_block_center">
@@ -1542,8 +1547,8 @@
                                     <img class="our_website_arrow_svg" src="Svgs/ArrowRightBlack.svg"/>
                                 </a>
                             </div>
-                            <div>
-                                <img src="Images/CzechFlag.png"/>
+                            <div class="flag_image_wrapper">
+                                <img class="flag_image" src="Images/CzechFlag.png"/>
                             </div>
                         </div>
                         <div class="go_to_website_bottom_block background_block_right">
@@ -1557,8 +1562,8 @@
                                     <img class="our_website_arrow_svg" src="Svgs/ArrowRightBlack.svg"/>
                                 </a>
                             </div>
-                            <div>
-                                <img src="Images/GermanyFlag.png"/>
+                            <div class="flag_image_wrapper">
+                                <img class="flag_image" src="Images/GermanyFlag.png"/>
                             </div>
                         </div>
                     </div>
@@ -1582,22 +1587,16 @@
                     drop.Healthy
                     choice for every day</p>
                 <div class="soc_icons_wrapper">
-                  <a href="">
                     <img src="Svgs/Instagram.svg"/>
-                  </a>
-                  <a href="">
-                        <img src="Svgs/Facebook.svg"/>
-                  </a>
-                  <a href="">
-                        <img src="Svgs/Youtube.svg"/>
-                  </a>
+                    <img src="Svgs/Facebook.svg"/>
+                    <img src="Svgs/Youtube.svg"/>
                 </div>
 
             </div>
             <div class="footer_top_right">
                 <div class="footer_top_right_company_name_wrapper">
-                    <a href="tel:" class="footer_xs bold">+420 999 999 999</a>
-                    <a href="mailto:" class="footer_xs regular">Company@email.com</a>
+                    <a class="footer_xs bold text_decoration_none">+420 999 999 999</a>
+                    <a href="Company@email.com" class="footer_xs regular text_decoration_none">Company@email.com</a>
                 </div>
                 <div class="footer_top_right_newsletter_wrapper">
                     <p class="footer_xs regular">Newsletter</p>

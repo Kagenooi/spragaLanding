@@ -10,6 +10,8 @@
     }
     @media (max-width: 640px) {
         padding-inline: 24px;
+            flex-direction: column-reverse;
+
     }
 
 
@@ -114,6 +116,11 @@
     height: max-content;
     min-width: min(414px, 30%);
     row-gap: 22px;
+    @media (max-width: 640px) {
+        margin-top: 0;
+        top: 10px;
+        position: static;
+    }
 
     & a {
         text-decoration: none;

@@ -9,16 +9,14 @@ const checkParallax = () => {
         }
     } else {
         if (parallaxInstance) {
-            parallaxInstance.destroy();  // Destroy parallax instance
+            parallaxInstance.destroy();
             parallaxInstance = null;
         }
     }
 };
 
-// Initialize on page load
 checkParallax();
 
-// Listen for window resize to dynamically enable/disable parallax
 window.addEventListener("resize", checkParallax);
 
 
@@ -39,24 +37,22 @@ videoPlayer.addEventListener("click", () => {
 
 const parallaxSVGs = document.querySelectorAll(".parallax_svg");
 
-// Function to handle parallax effect
 const handleScroll = () => {
 
     if (window.innerWidth < 1024) {
         return;
     }
-    const scrollPosition = window.pageYOffset; // Get the current scroll position
+    const scrollPosition = window.pageYOffset;
 
     parallaxSVGs.forEach((svg, index) => {
-        // Oscillating scale factor using sine wave
-        const scaleFactor = 0.005; // Adjust for sensitivity
-        const maxScale = 1; // Maximum size
-        const minScale = 0.8; // Minimum size
+
+        const scaleFactor = 0.005;
+        const maxScale = 1;
+        const minScale = 0.8;
 
         const maxLeft = 50;
-        const minLeft = 0; // Minimum left translation
+        const minLeft = 0;
 
-        // Use Math.sin to create a smooth oscillation based on scroll
         const scale =
             minScale +
             ((maxScale - minScale) *
@@ -69,7 +65,6 @@ const handleScroll = () => {
                 (Math.sin(scrollPosition * scaleFactor + index) + 1)) /
             2;
 
-        // Combine scale and translateX in a single transform
         svg.style.transform = `translateX(${left}px) scale(${scale})`;
     });
 
@@ -84,50 +79,87 @@ const path2 = document.getElementById("path2");
 const car = document.getElementById("car");
 const pathLength = path.getTotalLength();
 const path2Length = path2.getTotalLength();
-const speedFactor = 4;          // Speed for the first path
-const path2SpeedFactor = 6;     // Speed for the second path
-const myDiv = document.getElementById("positionScroll");
+const speedFactor = 4;
+const path2SpeedFactor = 6;
 
-const transformPath1 = (car, point, angle, scaleFactor = 1) => {
-    const offsetX = car.offsetWidth / 2;
-    const offsetY = car.offsetHeight / 2;
-    car.style.transform = `translate(${point.x + 25 - offsetX - 5}px, ${point.y - 40 - offsetY}px) rotate(${angle}deg) scale(${scaleFactor})`;
+const translatePositions = [
+    { scrollPosition: 0, translateX: 0, translateY: -30 },
+    { scrollPosition: 0.15, translateX: 38, translateY: 55 },
+    { scrollPosition: 0.33, translateX: 50, translateY: 0 },
+    { scrollPosition: 0.45, translateX: 15, translateY: -30 },
+    { scrollPosition: 0.6, translateX: 30, translateY: -27 },
+    { scrollPosition: 0.75, translateX: -10, translateY: 20 },
+    { scrollPosition: 0.9, translateX: 13, translateY: 14 },
+    { scrollPosition: 1, translateX: 10, translateY: 20 },
+];
+
+const interpolate = (start, end, t) => {
+    return start + (end - start) * t;
 };
 
-const transformPath2 = (car, point, angle, scaleFactor = 1) => {
-    const offsetX = car.offsetWidth / 2;
-    const offsetY = car.offsetHeight / 2;
-    car.style.transform = `translate(${point.x + 25 - offsetX - 5}px, ${point.y - 90 - offsetY}px) rotate(${angle}deg) scale(${scaleFactor})`;
+const getTranslateValues = (scrollRatio) => {
+    let translateX = 0;
+    let translateY = 0;
+    for (let i = 0; i < translatePositions.length - 1; i++) {
+        const start = translatePositions[i];
+        const end = translatePositions[i + 1];
+
+        if (scrollRatio >= start.scrollPosition && scrollRatio < end.scrollPosition) {
+            const t = (scrollRatio - start.scrollPosition) / (end.scrollPosition - start.scrollPosition);
+            translateX = interpolate(start.translateX, end.translateX, t);
+            translateY = interpolate(start.translateY, end.translateY, t);
+            break;
+        }
+    }
+    return { translateX, translateY };
 };
 
 const updateCarPositionOnPath1 = (scrollRatio) => {
-
-    let positionOnPath = scrollRatio * pathLength;
-    let point = path.getPointAtLength(positionOnPath);
+    const positionOnPath = scrollRatio * pathLength;
+    const point = path.getPointAtLength(positionOnPath);
     const nextPointPosition = Math.min(positionOnPath + 1, pathLength);
     const nextPoint = path.getPointAtLength(nextPointPosition);
     const angle = Math.atan2(nextPoint.y - point.y, nextPoint.x - point.x) * (180 / Math.PI);
-    transformPath1(car, point, angle);
+    const { translateX, translateY } = getTranslateValues(scrollRatio);
+
+    anime({
+        targets: car,
+        translateX: point.x + 25 - car.offsetWidth / 2 - 5 + translateX,
+        translateY: point.y - 40 - car.offsetHeight / 2 + translateY,
+        rotate: angle,
+        duration: 0, // Animation duration is controlled by scroll speed.
+        easing: 'linear'
+    });
 };
 
 const updateCarPositionOnPath2 = (scrollRatio) => {
-    let path2ScrollRatio = (scrollRatio - 1) * path2SpeedFactor; // Apply higher speed on path2
-    let positionOnPath = Math.min(path2ScrollRatio * path2Length, path2Length-200);
-    let point = path2.getPointAtLength(positionOnPath);
+    const path2ScrollRatio = (scrollRatio - 1) * path2SpeedFactor;
+    const positionOnPath = Math.min(path2ScrollRatio * path2Length, path2Length - 200);
+    const point = path2.getPointAtLength(positionOnPath);
     const nextPointPosition = Math.min(positionOnPath + 1, path2Length);
     const nextPoint = path2.getPointAtLength(nextPointPosition);
     const angle = Math.atan2(nextPoint.y - point.y, nextPoint.x - point.x) * (180 / Math.PI);
+    const { translateX, translateY } = getTranslateValues(scrollRatio);
 
-    transformPath2(car, point, angle);
+    anime({
+        targets: car,
+        translateX: point.x + 25 - car.offsetWidth / 2 - 5 + translateX,
+        translateY: point.y - 90 - car.offsetHeight / 2 + translateY,
+        rotate: angle,
+        duration: 0, // Animation duration is controlled by scroll speed.
+        easing: 'linear'
+    });
 };
+
 const updateCarPosition = () => {
     if (window.innerWidth < 1024) {
         return;
     }
     car.style.display = "block";
-    const scrollPosition = window.pageYOffset-2800-(window.innerHeight/2);
+    const scrollPosition = window.pageYOffset - 2800 - (window.innerHeight / 2);
     const totalHeight = document.body.scrollHeight - window.innerHeight;
     const scrollRatio = Math.min((scrollPosition / totalHeight) * speedFactor, 2); // Cap at 2 to cover both paths
+
     if (scrollRatio <= 1) {
         updateCarPositionOnPath1(scrollRatio);
     } else {
