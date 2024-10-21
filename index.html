@@ -4,16 +4,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Basic HTML Page</title>
-    <link href="main.css" rel="stylesheet">
-    <link href="fonts.css" rel="stylesheet">
-    <link href="styles_svg.css" rel="stylesheet">
-    <link href="styles_section1.css" rel="stylesheet">
-    <link href="styles_section_2.css" rel="stylesheet">
-    <link href="styles_section_3.css" rel="stylesheet">
-    <link href="styles_section_4.css" rel="stylesheet">
-    <link href="styles_section_5.css" rel="stylesheet">
-    <link href="styles_section_6.css" rel="stylesheet">
-    <link href="styles_section_7.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@400;700&display=swap"
@@ -1517,55 +1508,54 @@
                         Visit us on your country
                     </p>
                     <div class="our_websites_bottom_block">
-                        <div class="go_to_website_bottom_block background_block_left">
+                        <a  href="https://spraga.ua" class="go_to_website_bottom_block background_block_left">
                             <div>
                                 <h2 class="md bold">
                                     spraga.ua
                                 </h2>
 
-                                <a class="xxs regular text_decoration_none center" href="https://spraga.ua"
+                                <p class="xxs regular text_decoration_none center"
                                    target="_blank">
                                     Go to website
                                     <img class="our_website_arrow_svg" src="Svgs/ArrowRightBlack.svg"/>
-                                </a>
+                              </p>
 
 
                             </div>
                             <div class="flag_image_wrapper">
                                 <img class="flag_image" src="Images/UkrainianFLag.png"/>
                             </div>
-                        </div>
-                        <div class="go_to_website_bottom_block background_block_center">
+                        </a>
+                        <a href="https://spraga.cz" class="go_to_website_bottom_block background_block_center">
                             <div>
                                 <h2 class="md bold">
                                     spraga.cz
                                 </h2>
-                                <a class="our_website_description regular text_decoration_none center"
-                                   href="https://spraga.cz"
+                                <p class="our_website_description regular text_decoration_none center"
                                    target="_blank">
                                     Go to website
                                     <img class="our_website_arrow_svg" src="Svgs/ArrowRightBlack.svg"/>
-                                </a>
+                              </p>
                             </div>
                             <div class="flag_image_wrapper">
                                 <img class="flag_image" src="Images/CzechFlag.png"/>
                             </div>
-                        </div>
-                        <div class="go_to_website_bottom_block background_block_right">
+                        </a>
+                        <a href="https://spraga.de" class="go_to_website_bottom_block background_block_right">
                             <div>
                                 <h2 class=" md bold ">
                                     spraga.de
                                 </h2>
-                                <a class="xxs regular text_decoration_none center" href="https://spraga.de"
+                                <p class="xxs regular text_decoration_none center" 
                                    target="_blank">
                                     Go to website
                                     <img class="our_website_arrow_svg" src="Svgs/ArrowRightBlack.svg"/>
-                                </a>
+                              </p>
                             </div>
                             <div class="flag_image_wrapper">
                                 <img class="flag_image" src="Images/GermanyFlag.png"/>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -1595,7 +1585,7 @@
             </div>
             <div class="footer_top_right">
                 <div class="footer_top_right_company_name_wrapper">
-                    <a class="footer_xs bold text_decoration_none">+420 999 999 999</a>
+                    <a href="" class="footer_xs bold text_decoration_none">+420 999 999 999</a>
                     <a href="Company@email.com" class="footer_xs regular text_decoration_none">Company@email.com</a>
                 </div>
                 <div class="footer_top_right_newsletter_wrapper">
@@ -1627,7 +1617,7 @@
                 <a class="footer_xxs regular text_decoration_none" href="general_terms.html">Terms and Conditions</a>
             </div>
             <p class="footer_xxs regular ">
-                Created by Soltreex
+                Created by <a href="https://www.soltreex.com">Soltreex</a>
             </p>
         </div>
     </div>
@@ -1635,10 +1625,5 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="header.js"></script>
-<script src="index.js"></script>
-<script src="swiper.js" type="module"></script>
-
+<script type="module" src="index.js"></script>
 </body>
-
-
