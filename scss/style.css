@@ -1607,16 +1607,6 @@ header {
     width: 70%;
   }
 }
-@media (max-width: 640px) {
-  .union_ltd_bright_round_svg {
-    width: 40%;
-  }
-}
-@media (max-width: 360px) {
-  .union_ltd_bright_round_svg {
-    width: 70%;
-  }
-}
 
 .curve_line_wrapper {
   position: relative;
@@ -1666,6 +1656,7 @@ header {
 @media (max-width: 640px) {
   .curve_absolute {
     height: 3660px;
+    top: 60px;
   }
 }
 
@@ -1790,6 +1781,7 @@ header {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  padding: 0 16px;
 }
 
 .product_icon {
@@ -1842,7 +1834,11 @@ header {
 }
 @media (max-width: 640px) {
   .spraga_tost {
-    padding: 32px;
+    padding: 28px 24px;
+  }
+  .spraga_tost * {
+    font-size: 16px;
+    gap: 24px;
   }
 }
 
@@ -2226,6 +2222,11 @@ header {
     width: 300px;
   }
 }
+@media (max-width: 640px) {
+  .block1_text {
+    min-height: 220px;
+  }
+}
 
 .block2_text {
   width: 333px;
@@ -2412,6 +2413,7 @@ header {
   display: flex;
   -moz-column-gap: 56px;
        column-gap: 56px;
+  padding: 0 8px;
 }
 @media (max-width: 1280px) {
   .environmental_block_wrapper {
@@ -2480,6 +2482,7 @@ header {
   .slider_text_wrapper {
     top: 80px;
     padding-left: 0;
+    padding: 0 8px;
   }
 }
 
@@ -2669,6 +2672,28 @@ header {
   .our_websites_bottom_block {
     margin-inline: 8px;
     width: calc(100% + 16px);
+  }
+}
+
+.soonDecor {
+  position: relative;
+  z-index: 1;
+  left: -50px;
+  bottom: -15px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+@media (max-width: 640px) {
+  .soonDecor {
+    left: -40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bgFff {
+    background: #fff;
+    position: relative;
+    z-index: 2;
   }
 }
 
